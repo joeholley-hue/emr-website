@@ -1,54 +1,81 @@
 body{
-font-family:Segoe UI,Arial,sans-serif;
-margin:0;
-background:#f4f6f8;
-color:#333;
+    margin:0;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#f4f6f8;
+    color:#333;
 }
 
 header{
-background:white;
-padding:20px;
-text-align:center;
+    background:white;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
 .logo{
-width:90%;
-max-width:700px;
+    width:90%;
+    max-width:750px;
 }
 
 nav{
-margin-top:15px;
+    margin-top:20px;
 }
 
 nav a{
-margin:0 12px;
-text-decoration:none;
-color:#1F5AA8;
-font-weight:bold;
+    text-decoration:none;
+    margin:0 12px;
+    color:#1F5AA8;
+    font-weight:600;
 }
 
 .hero{
-background:#1F5AA8;
-color:white;
-padding:60px 20px;
-text-align:center;
+    background:#1F5AA8;
+    color:white;
+    text-align:center;
+    padding:80px 25px;
+}
+
+.hero h1{
+    margin:0;
+    font-size:48px;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:20px;
+    background:#D89A2B;
+    color:white;
+    padding:12px 24px;
+    border-radius:6px;
+    text-decoration:none;
 }
 
 .content{
-max-width:1000px;
-margin:auto;
-padding:40px 20px;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
 }
 
-.heroimg{
-max-width:800px;
-width:100%;
-border-radius:10px;
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.08);
 }
 
 footer{
-background:#1F5AA8;
-color:white;
-padding:20px;
-text-align:center;
+    background:#1F5AA8;
+    color:white;
+    text-align:center;
+    padding:25px;
 }
