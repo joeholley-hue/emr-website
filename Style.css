@@ -13,7 +13,7 @@ header{
 
 .logo{
     max-width:350px;
-    width:55%;
+    width:50%;
     height:auto;
     display:block;
     margin:auto;
@@ -101,3 +101,27 @@ nav a:hover{
     color:#D89A2B;
 }
 ``
+nav{
+    text-align:center;
+    margin-top:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#1F5AA8;
+    margin:0 15px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#D89A2B;
+}
+
+.button{
+    background:#D89A2B;
+    color:white;
+    padding:12px 20px;
+    border-radius:6px;
+    text-decoration:none;
+    display:inline-block;
+}
