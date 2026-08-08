@@ -12,8 +12,8 @@ header{
 }
 
 .logo{
-    max-width:450px;
-    width:65%;
+    max-width:350px;
+    width:55%;
     height:auto;
     display:block;
     margin:auto;
@@ -86,3 +86,18 @@ footer{
     padding:25px;
     margin-top:40px;
 }
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    text-decoration:none;
+    margin:0 15px;
+    color:#1F5AA8;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#D89A2B;
+}
+``
