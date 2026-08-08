@@ -13,10 +13,12 @@ header{
 }
 
 .logo{
-    max-width:800px;
-    width:95%;
+    max-width:500px;
+    width:70%;
+    height:auto;
+    display:block;
+    margin:auto;
 }
-
 nav{
     margin-top:20px;
 }
