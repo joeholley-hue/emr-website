@@ -1,127 +1,73 @@
 body{
     margin:0;
     font-family:Segoe UI, Arial, sans-serif;
-    color:#333;
     background:#f5f7fa;
+    color:#333;
 }
 
 header{
     background:white;
     text-align:center;
     padding:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
 
 .logo{
     max-width:350px;
-    width:50%;
+    width:60%;
     height:auto;
     display:block;
     margin:auto;
 }
+
 nav{
-    margin-top:20px;
+    margin-top:15px;
 }
 
 nav a{
     text-decoration:none;
     color:#1F5AA8;
-    font-weight:600;
     margin:0 12px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#D89A2B;
 }
 
 .hero{
     background:#1F5AA8;
     color:white;
     text-align:center;
-    padding:80px 25px;
-}
-
-.hero h1{
-    font-size:48px;
-    margin-bottom:15px;
-}
-
-.hero p{
-    font-size:22px;
+    padding:60px 20px;
 }
 
 .button{
     display:inline-block;
-    margin-top:25px;
     background:#D89A2B;
     color:white;
-    padding:14px 24px;
+    padding:12px 20px;
     border-radius:6px;
     text-decoration:none;
+    margin-top:15px;
 }
 
 .content{
     max-width:1100px;
     margin:auto;
-    padding:50px 20px;
+    padding:40px 20px;
 }
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,.08);
-}
-
-.heroimg{
+.partner-logo{
+    max-width:300px;
     width:100%;
-    border-radius:10px;
+    display:block;
+    margin:auto;
 }
 
 footer{
     background:#1F5AA8;
     color:white;
     text-align:center;
-    padding:25px;
-    margin-top:40px;
-}
-nav{
-    margin-top:15px;
-}
-
-nav a{
-    text-decoration:none;
-    margin:0 15px;
-    color:#1F5AA8;
-    font-weight:600;
-}
-
-nav a:hover{
-    color:#D89A2B;
-}
-``
-nav{
-    text-align:center;
-    margin-top:15px;
-}
-
-nav a{
-    text-decoration:none;
-    color:#1F5AA8;
-    margin:0 15px;
-    font-weight:600;
-}
-
-nav a:hover{
-    color:#D89A2B;
-}
-
-.button{
-    background:#D89A2B;
-    color:white;
-    padding:12px 20px;
-    border-radius:6px;
-    text-decoration:none;
-    display:inline-block;
+    padding:20px;
 }
