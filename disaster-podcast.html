@@ -3,8 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disaster Podcast</title>
+    <title>Subscribe to the Disaster Podcast</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .subscribe-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .subscribe-container h1 {
+            margin-bottom: 10px;
+        }
+
+        .subscribe-container p {
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .platform-card {
+            background: #e8f1ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #003366;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .platform-card img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+
+        .platform-card a {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #003366;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .platform-card a:hover {
+            background-color: #0055a5;
+        }
+
+        /* Facebook Group Card */
+        .fb-card {
+            margin-top: 40px;
+            background: #e8f1ff;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #003366;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .fb-card a {
+            display: inline-block;
+            margin-top: 12px;
+            background-color: #003366;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .fb-card a:hover {
+            background-color: #0055a5;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,40 +91,82 @@
     <!-- NAVIGATION -->
     <nav>
         <div class="nav-container">
-            <div class="logo">
-                <a href="index.html">EMR</a>
-            </div>
+            <div class="logo"><a href="index.html">EMR</a></div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="protocols.html">Protocols</a>
                 <a href="education.html">Education</a>
-                <a href="pmeg.html">PMEG</a>
+                <a href="pmeg.html">Paragon MEG</a>
                 <a href="disaster-podcast.html">Disaster Podcast</a>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- PODCAST SECTION -->
-    <div class="container">
-        <h1>Disaster Podcast</h1>
-
+    <!-- SUBSCRIBE SECTION -->
+    <div class="container subscribe-container">
+        <h1>Subscribe to the Disaster Podcast</h1>
         <p>
-            The Disaster Podcast delivers real‑world insights into emergency response, disaster medicine, 
-            EMS operations, and preparedness. Hosted by experienced responders and medical professionals, 
-            the show explores lessons learned from major incidents, emerging threats, and best practices 
-            for agencies and providers.
+            Stay connected with the latest insights in disaster response, EMS operations, preparedness, and emergency medicine.  
+            Subscribe on your favorite platform to get new episodes delivered automatically.
         </p>
 
-        <img src="assets/disasterpodcast-logo-itunes-3000x3000.jpg" alt="Disaster Podcast Logo">
+        <!-- Podcast Logo -->
+        <img src="assets/disasterpodcast-logo-itunes-3000x3000.jpg" 
+             alt="Disaster Podcast Logo" 
+             style="max-width:200px; margin:20px auto; display:block;">
 
-        <h2>About the Show</h2>
-        <p>
-            Each episode features discussions on disaster response, EMS leadership, medical direction, 
-            and operational readiness. Whether you're a paramedic, EMT, emergency manager, or healthcare 
-            provider, the Disaster Podcast offers valuable perspectives to strengthen your preparedness 
-            and response capabilities.
-        </p>
+        <div class="platform-grid">
 
+            <!-- Apple Podcasts -->
+            <div class="platform-card">
+                <img src="assets/apple-podcast-icon.png" alt="Apple Podcasts">
+                <h3>Apple Podcasts</h3>
+                <a href="https://itunes.apple.com/us/podcast/disaster-podcast/id824789312" target="_blank">Subscribe</a>
+            </div>
 
+            <!-- Spotify -->
+            <div class="platform-card">
+                <img src="assets/spotify-icon.png" alt="Spotify">
+                <h3>Spotify</h3>
+                <a href="https://open.spotify.com/search/disaster%20podcast" target="_blank">Subscribe</a>
+            </div>
+
+            <!-- Google Podcasts -->
+            <div class="platform-card">
+                <img src="assets/google-podcast-icon.png" alt="Google Podcasts">
+                <h3>Google Podcasts</h3>
+                <a href="https://podcasts.google.com/" target="_blank">Subscribe</a>
+            </div>
+
+            <!-- RSS Feed -->
+            <div class="platform-card">
+                <img src="assets/rss-icon.png" alt="RSS Feed">
+                <h3>RSS Feed</h3>
+                <a href="https://disasterpodcast.com/feed/podcast/" target="_blank">Subscribe</a>
+            </div>
+
+        </div>
+
+        <!-- FACEBOOK GROUP -->
+        <div class="fb-card">
+            <h2>Join the Disaster Podcast Community</h2>
+            <p>
+                Connect with listeners, responders, educators, and the Disaster Podcast team.  
+                Share insights, ask questions, and be part of the conversation.
+            </p>
+            <a href="https://www.facebook.com/groups/DisasterPodcast/" target="_blank">
+                Visit the Facebook Group
+            </a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Emergency Medical Resources — Contact: admin@emergencymedicalresources.com</p>
+    </footer>
+
+</body>
+</html>
