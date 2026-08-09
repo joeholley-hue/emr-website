@@ -1,104 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Emergency Medical Resources</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background: #f7f7f7;
-        }
-        form {
-            background: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            max-width: 600px;
-            margin: auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        label {
-            display: block;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        button {
-            margin-top: 20px;
-            padding: 12px 20px;
-            background: #0078ff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background: #005fcc;
-        }
-        #status {
-            margin-top: 20px;
-            font-weight: bold;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Contact Emergency Medical Resources</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<h2>Contact Emergency Medical Resources</h2>
+<header>
 
-<form id="contactForm" action="/api/contact" method="post">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="name" required>
+EMR-Blue.Horiz.bmp.png
 
-    <label for="email">Your Email</label>
-    <input type="email" id="email" name="email" required>
+<nav>
+<a href="index.html">Home</a>
+about.htmlAbout</a>
+<a hrefls.htmlProtocols</a>
+<a hrefon.htmlEducation</a>
+<aeg.htmlPMEG</a>
+<a href="podcast.html">Podcast</a>
+contact.htmlContact</a>
+</nav>
 
-    <label for="agency">Agency / Organization</label>
-    <input type="text" id="agency" name="agency">
+</header>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="6" required></textarea>
+<section class="hero">
 
-    <button type="submit">Send Message</button>
-</form>
+<h1>Contact Emergency Medical Resources</h1>
 
-<div id="status"></div>
+<p>
+Questions regarding EMS education, medical direction,
+protocol development, or disaster preparedness?
+</p>
 
-<script>
-document.getElementById("contactForm").addEventListener("submit", async function(e) {
-    e.preventDefault();
+</section>
 
-    const formData = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        agency: document.getElementById("agency").value,
-        message: document.getElementById("message").value
-    };
+<div class="content">
 
-    const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
-    });
+<div style="text-align:center;">
 
-    const statusDiv = document.getElementById("status");
+JOe for EMR.jpg
 
-    if (response.status === 200) {
-        statusDiv.innerHTML = "Message sent successfully.";
-        statusDiv.style.color = "green";
-    } else {
-        statusDiv.innerHTML = "Error sending message.";
-        statusDiv.style.color = "red";
-    }
-});
-</script>
+</div>
+
+<h2>Joe Holley, MD FACEP FAEMS</h2>
+
+<p>
+Emergency Physician<br>
+EMS Medical Director<br>
+Educator and Consultant
+</p>
+
+<p>
+<strong>Email</strong><br>
+contact@emergencymedicalresources.com
+contact@emergencymedicalresources.com
+</a>
+</p>
+
+<p>
+<strong>Phone</strong><br>
+901-466-6367
+</p>
+
+<p>
+Eads, Tennessee
+</p>
+
+</div>
+
+<footer>
+
+Emergency Medical Resources<br>
+
+<a href@emergencymedicalresources.com
+contact@emergencymedicalresources.com
+</a>
+
+</footer>
 
 </body>
 </html>
