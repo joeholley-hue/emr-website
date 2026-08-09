@@ -5,16 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMS Education</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .edu-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start;
+            margin-top: 30px;
+        }
+
+        .edu-photo {
+            max-width: 250px;   /* smaller image */
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .edu-text {
+            flex: 1;
+            min-width: 280px;
+            line-height: 1.6;
+        }
+
+        .edu-text h1 {
+            margin-top: 0;
+        }
+
+        .edu-text p {
+            margin-bottom: 18px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
     <nav>
         <div class="nav-container">
-            <div class="logo">
-                <a href="index.html">EMR</a>
-            </div>
+            <div class="logo"><a href="index.html">EMR</a></div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -27,15 +56,43 @@
         </div>
     </nav>
 
-    <!-- EDUCATION SECTION -->
     <div class="container">
-        <h1>EMS Education & Training</h1>
-        <p>
-            Emergency Medical Resources provides high‑quality EMS education designed to strengthen clinical skills, 
-            improve decision‑making, and support providers in delivering exceptional patient care. Our training 
-            programs are built on evidence‑based medicine, real‑world experience, and a commitment to EMS excellence.
-        </p>
+        <div class="edu-wrapper">
 
-        <img src="assets/joe-lecture.jpg" alt="EMS Lecture">
+            <img src="assets/EMR-Blue.Horiz.bmp.png" alt="EMS Education" class="edu-photo">
 
-        <h2>Training for All Levels of
+            <div class="edu-text">
+                <h1>EMS Education</h1>
+
+                <p>
+                    Emergency Medical Resources provides high‑quality EMS education designed to support providers at
+                    every level. Our programs focus on evidence‑based practice, operational readiness, and clinical
+                    excellence.
+                </p>
+
+                <p>
+                    EMR offers continuing education, protocol updates, skills refreshers, and specialized training for
+                    EMS agencies across multiple states. Courses are developed and delivered by experienced EMS medical
+                    directors and educators.
+                </p>
+
+                <p>
+                    Whether your agency needs in‑person instruction, virtual training, or customized educational
+                    content, EMR can support your team’s professional development.
+                </p>
+
+                <p>
+                    For education requests or scheduling, contact  
+                    <strong>admin@emergencymedicalresources.com</strong>.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Emergency Medical Resources — Contact: admin@emergencymedicalresources.com</p>
+    </footer>
+
+</body>
+</html>
