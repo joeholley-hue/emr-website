@@ -73,3 +73,41 @@ footer {
 footer a {
     color: white;
 }
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.contact-photo {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.contact-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.contact-card {
+    background: #f4f6fa;
+    border-left: 5px solid #003b79;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.contact-card a {
+    color: #003b79;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
