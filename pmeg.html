@@ -3,8 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PMEG – Paramedic Medical Education Group</title>
+    <title>Paragon Medical Education Group</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .partner-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start;
+            margin-top: 30px;
+        }
+
+        .partner-logo {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .partner-text {
+            flex: 1;
+            min-width: 280px;
+            line-height: 1.6;
+        }
+
+        .partner-text h1 {
+            margin-top: 0;
+        }
+
+        .partner-text p {
+            margin-bottom: 18px;
+        }
+
+        .partner-link {
+            display: inline-block;
+            margin-top: 12px;
+            background-color: #003366;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .partner-link:hover {
+            background-color: #0055a5;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,25 +59,61 @@
     <!-- NAVIGATION -->
     <nav>
         <div class="nav-container">
-            <div class="logo">
-                <a href="index.html">EMR</a>
-            </div>
+            <div class="logo"><a href="index.html">EMR</a></div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="protocols.html">Protocols</a>
                 <a href="education.html">Education</a>
-                <a href="pmeg.html">PMEG</a>
+                <a href="pmeg.html">Paragon MEG</a>
                 <a href="disaster-podcast.html">Disaster Podcast</a>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- PMEG SECTION -->
+    <!-- PARTNER SECTION -->
     <div class="container">
-        <h1>Paramedic Medical Education Group (PMEG)</h1>
+        <div class="partner-wrapper">
 
-        <p>
-            The Paramedic Medical Education Group (PMEG) is dedicated to advancing paramedic education, clinical 
-            excellence, and professional
+            <!-- LOGO (upload your file to /assets and name it paragon-logo.png) -->
+            <img src="assets/paragon-logo.png" alt="Paragon Medical Education Group Logo" class="partner-logo">
+
+            <!-- TEXT -->
+            <div class="partner-text">
+                <h1>Paragon Medical Education Group</h1>
+
+                <p>
+                    Emergency Medical Resources is proud to partner with 
+                    <strong>Paragon Medical Education Group</strong>, a premier provider of high‑quality EMS and 
+                    medical education. Paragon delivers exceptional training programs designed to elevate clinical 
+                    performance, strengthen operational readiness, and support EMS professionals at every level.
+                </p>
+
+                <p>
+                    Their courses are built on evidence‑based practice, real‑world experience, and a commitment to 
+                    excellence. Paragon’s instructors bring decades of field, clinical, and leadership expertise, 
+                    ensuring every learner receives practical, relevant, and impactful education.
+                </p>
+
+                <p>
+                    Through this partnership, EMR agencies gain access to advanced continuing education, hands‑on 
+                    workshops, leadership development, and specialized training tailored to the needs of modern EMS 
+                    systems.
+                </p>
+
+                <a class="partner-link" href="https://www.paragonmedicaleducationgroup.com" target="_blank">
+                    Visit Paragon Medical Education Group
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Emergency Medical Resources — Contact: admin@emergencymedicalresources.com</p>
+    </footer>
+
+</body>
+</html>
