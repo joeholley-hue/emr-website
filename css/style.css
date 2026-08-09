@@ -6,40 +6,37 @@ body {
 }
 
 header {
-    background: white;
+    background: #003b79;
+    color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.logo {
-    max-width: 350px;
-    width: 60%;
-    height: auto;
-    display: block;
-    margin: auto;
+header h2 {
+    margin: 0;
 }
 
 nav {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 nav a {
-    color: #1F5AA8;
+    color: white;
     text-decoration: none;
-    margin: 0 12px;
-    font-weight: bold;
+    margin: 0 10px;
+    font-weight: 600;
 }
 
 nav a:hover {
-    color: #D89A2B;
+    text-decoration: underline;
 }
 
 .hero {
-    background: #1F5AA8;
+    background: #003b79;
     color: white;
     text-align: center;
-    padding: 50px;
+    padding: 50px 20px;
 }
 
 .content {
@@ -50,13 +47,23 @@ nav a:hover {
 
 .bio-photo {
     width: 250px;
+    max-width: 100%;
     display: block;
     margin: 0 auto 20px auto;
     border-radius: 10px;
 }
 
+.button {
+    display: inline-block;
+    background: #d89a2b;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
 footer {
-    background: #1F5AA8;
+    background: #003b79;
     color: white;
     text-align: center;
     padding: 20px;
