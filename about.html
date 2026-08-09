@@ -7,29 +7,35 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-        /* Page-specific image sizing */
+        /* Side-by-side layout */
+        .about-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start;
+            margin-top: 30px;
+        }
+
         .about-photo {
             max-width: 350px;
             width: 100%;
             height: auto;
-            display: block;
-            margin: 20px auto;
             border-radius: 8px;
+            flex-shrink: 0;
         }
 
-        .about-section {
-            max-width: 900px;
-            margin: 0 auto;
+        .about-text {
+            flex: 1;
+            min-width: 280px;
             line-height: 1.6;
         }
 
-        .about-section h1 {
-            text-align: center;
-            margin-bottom: 20px;
+        .about-text p {
+            margin-bottom: 18px;
         }
 
-        .about-section p {
-            margin-bottom: 18px;
+        .about-text h1 {
+            margin-top: 0;
         }
     </style>
 </head>
@@ -53,7 +59,47 @@
     </nav>
 
     <!-- ABOUT SECTION -->
-    <div class="container about-section">
-        <h1>About Emergency Medical Resources</h1>
+    <div class="container">
+        <div class="about-wrapper">
 
-        <img src="assets/JOe for EMR.jpg" alt="Joe Holley" class="about-photo">
+            <!-- IMAGE -->
+            <img src="assets/JOe for EMR.jpg" alt="Joe Holley" class="about-photo">
+
+            <!-- TEXT -->
+            <div class="about-text">
+                <h1>About Emergency Medical Resources</h1>
+
+                <p>
+                    Emergency Medical Resources (EMR) provides EMS agencies with expert medical direction, protocol
+                    development, education, and operational guidance. Our mission is to support EMS professionals with
+                    the tools, training, and leadership needed to deliver exceptional patient care.
+                </p>
+
+                <p>
+                    Led by Dr. Joe Holley, EMR brings decades of experience in emergency medicine, disaster response,
+                    and EMS system leadership. EMR partners with agencies across multiple states to ensure providers
+                    have access to evidence‑based protocols, high‑quality continuing education, and operational support.
+                </p>
+
+                <p>
+                    EMR collaborates with regional and national organizations to advance EMS practice, improve system
+                    readiness, and strengthen disaster preparedness. Whether through protocol development, medical
+                    oversight, or educational programs, EMR is committed to supporting the EMS community.
+                </p>
+
+                <p>
+                    For inquiries, collaboration, or agency support, contact us at  
+                    <strong>admin@emergencymedicalresources.com</strong>.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Emergency Medical Resources — Contact: admin@emergencymedicalresources.com</p>
+    </footer>
+
+</body>
+</html>
