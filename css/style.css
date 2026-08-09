@@ -1,14 +1,18 @@
+/* Global */
+
 body {
     margin: 0;
-    font-family: Segoe UI, Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     background: #f5f7fa;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Header */
+/* Navigation */
 
 nav {
     background: #003b79;
+    width: 100%;
 }
 
 .nav-container {
@@ -24,14 +28,14 @@ nav {
 .logo a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
 .nav-links {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -44,7 +48,26 @@ nav {
     text-decoration: underline;
 }
 
-/* Page Content */
+/* Hero Sections */
+
+.hero {
+    background: #003b79;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+/* Main Content */
 
 .container {
     max-width: 1000px;
@@ -52,41 +75,28 @@ nav {
     padding: 40px 20px;
 }
 
-.hero {
-    background: #003b79;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.hero h1 {
-    margin: 0;
-}
-
 .content {
     max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
+    margin: 0 auto;
 }
 
-.bio-photo {
-    width: 250px;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto 20px auto;
-    border-radius: 10px;
-}
+/* Buttons */
 
 .button {
     display: inline-block;
     background: #d89a2b;
     color: white;
+    text-decoration: none;
     padding: 12px 24px;
     border-radius: 6px;
-    text-decoration: none;
+    margin-top: 20px;
 }
 
-/* Contact Page */
+.button:hover {
+    opacity: 0.9;
+}
+
+/* Cards */
 
 .contact-card {
     background: #f4f6fa;
@@ -106,6 +116,21 @@ nav {
     text-decoration: underline;
 }
 
+/* Images */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bio-photo,
+.edu-photo,
+.contact-photo {
+    max-width: 250px;
+    width: 100%;
+    border-radius: 8px;
+}
+
 /* Footer */
 
 footer {
@@ -118,50 +143,63 @@ footer {
 
 footer a {
     color: white;
+    text-decoration: none;
 }
 
-/* Mobile */
+/* MOBILE */
 
 @media screen and (max-width: 768px) {
 
     .nav-container {
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
+    .logo {
+        margin-bottom: 12px;
+    }
+
     .nav-links {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        margin-top: 15px;
-        gap: 12px;
+        gap: 10px;
     }
 
     .nav-links a {
         font-size: 14px;
     }
 
-    .container {
-        width: auto;
-        padding: 15px;
-    }
-
     .hero {
-        padding: 35px 15px;
+        padding: 40px 15px;
     }
 
     .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .contact-card {
+        padding: 15px;
+    }
+
+    h1 {
         font-size: 2rem;
     }
 
     h2 {
         font-size: 1.5rem;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .contact-card {
-        padding: 15px;
     }
 }
